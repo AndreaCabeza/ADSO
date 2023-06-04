@@ -1,0 +1,126 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --color-header: #000000e6;
+    --color-main: #ddc862;
+    --color-footer: #0a0a0a;
+    --color-submenu: rgb(246, 230, 106);
+    --color-menu-lateral: rgb(245, 218, 11);
+    --color-header-texto: #fff;
+    --color-footer-texto: #fff;
+    --color-menu-texto: #fff;
+  }
+  
+  main {
+      margin: 20px;
+      padding: 20px;
+      background-color: var(--color-main);
+      border-radius: 20px;
+  }
+
+  body {
+    background-image: url(img/cervezas.jpg);
+  }
+  
+  header {
+      background-color: var(--color-header);
+      color: var(--color-header-texto);
+      padding: 10px;
+  }
+  
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+ 
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+  h1 {
+    box-shadow: 10px 5px 15px rgb(236, 236, 70);
+  }
+  .seccion1 {
+      display: flex;
+      margin: 20px;
+  }
+  
+  .seccion2 {
+      display: flex;
+      margin: 20px;
+  }
+  
+  .seccion2 img {
+    margin: 20px;
+    border-radius: 20px;
+  }
+  
+  aside {
+      background-color: var(--color-menu-lateral);
+      border-radius: 50% 20% / 10% 40%;
+      border-style: dashed;
+      padding: 10px;
+      width: 250px;
+      margin-right: 20px;
+  }
+  
+  aside ul {
+      list-style-type: none;
+  }
+  
+  footer {
+      background-color: var(--color-footer);
+      color: var(--color-footer-texto);
+      padding: 10px;
+      text-align: center;
+      clear: both;
+  }
+ 
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline-block;
+    }
+    
+    nav ul li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    nav ul li ul {
+      display: none;  
+      position: absolute;
+      background-color: var(--color-submenu);
+      border: 1px solid #333;
+    }
+    
+    nav ul li:hover > ul {
+      display: inherit;
+    }
+    
+    nav ul li ul li {
+      width: 200px;
+      float: none;
+      display: list-item; 
+      position: relative; 
+    }
+    
+    nav ul li ul li a {
+      padding: 8px 16px;
+      color: #000;
+    }
+    
+    nav ul li ul li a:hover {
+      background-color: #f1f1f1;
+    }
+    
+  
